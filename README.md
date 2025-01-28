@@ -56,20 +56,21 @@ json
 
 Aplică migrațiile bazei de date (dacă este cazul): Asigură-te că ai aplicat migrațiile pentru a crea schema bazei de date:
 
-**bash**
+bash
 
-dotnet ef database update
+```dotnet ef database update```
+
 Rulează aplicația: Poți rula aplicația fie folosind Visual Studio, fie folosind linia de comandă (CLI) .NET:
 
-**bash**
+bash
 
-dotnet run
+```dotnet run```
 
 **Aplicația va porni pe http://localhost:7254, iar interfața ar trebui să fie accesibilă în browser.**
 
 **Roadmap și îmbunătățiri viitoare** 📈
 
-Autentificare și gestionarea utilizatorilor: Adăugarea unui sistem de autentificare pentru administratori și utilizatori, cu roluri diferite.
+**Autentificare și gestionarea utilizatorilor:** Adăugarea unui sistem de autentificare pentru administratori și utilizatori, cu roluri diferite.
 
 **Dashboard de performanță:** Crearea unui dashboard pentru vizualizarea statisticilor echipelor și jucătorilor.
 
