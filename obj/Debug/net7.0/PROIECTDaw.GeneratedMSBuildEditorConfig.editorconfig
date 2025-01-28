@@ -1,0 +1,53 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PROIECTDaw
+build_property.RootNamespace = PROIECTDaw
+build_property.ProjectDir = /Users/cornelciocan/Desktop/PROIECTDaw/PROIECTDaw/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/cornelciocan/Desktop/PROIECTDaw/PROIECTDaw
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/cornelciocan/Desktop/PROIECTDaw/PROIECTDaw/Views/Echipe/Echipe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRWNoaXBlL0VjaGlwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cornelciocan/Desktop/PROIECTDaw/PROIECTDaw/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cornelciocan/Desktop/PROIECTDaw/PROIECTDaw/Views/Jucatori/Jucatori.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSnVjYXRvcmkvSnVjYXRvcmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cornelciocan/Desktop/PROIECTDaw/PROIECTDaw/Views/Meciuri/Meciuri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVjaXVyaS9NZWNpdXJpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cornelciocan/Desktop/PROIECTDaw/PROIECTDaw/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cornelciocan/Desktop/PROIECTDaw/PROIECTDaw/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cornelciocan/Desktop/PROIECTDaw/PROIECTDaw/Views/Stadioane/Stadioane.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RhZGlvYW5lL1N0YWRpb2FuZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cornelciocan/Desktop/PROIECTDaw/PROIECTDaw/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cornelciocan/Desktop/PROIECTDaw/PROIECTDaw/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-oql1pzds0p

@@ -1,0 +1,447 @@
+﻿@{
+    ViewData["Title"] = "Meciuri";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Soccer &mdash; Website by Cornel&Bogdan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+
+
+        <header class="site-navbar py-4" role="banner">
+
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <div class="site-logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="ml-auto">
+                        <nav class="site-navigation position-relative text-right" role="navigation">
+                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                <li><a href="@Url.Action("Index", "Home")" class="nav-link">Acasa</a></li>
+                                <li><a href="@Url.Action("Index", "Meciuri")" class="nav-link">Meciuri</a></li>
+                                <li><a href="@Url.Action("Index", "Echipe")" class="nav-link">Echipe</a></li>
+                                <li><a href="@Url.Action("Index", "Stadioane")" class="nav-link">Stadioane</a></li>
+                            </ul>
+                        </nav>
+
+                        <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right text-white">
+                            <span class="icon-menu h3 text-white"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="hero overlay" style="background-image: url('images/bg_3.jpg');">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mx-auto text-center">
+                        <h1 class="text-white">Meciuri</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, molestias repudiandae pariatur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="d-flex team-vs">
+                        <span class="score">4-1</span>
+                        <div class="team-1 w-50">
+                            <div class="team-details w-100 text-center">
+                                <img src="/PozeBD/steaua.png" alt="Steaua" class="img-fluid">
+                                <h3>FCSB <span>(victorie)</span></h3>
+                                <ul class="list-unstyled">
+                                    <li>Luis Phelipe (7')</li>
+                                    <li>Florin Tanase (25')</li>
+                                    <li>Dennis Man (52')</li>
+                                    <li>Daniel Birligea (77')</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-2 w-50">
+                            <div class="team-details w-100 text-center">
+                                <img src="/PozeBD/dinamo.png" alt="Steaua" class="img-fluid">
+                                <h3>FC Dinamo Bucuresti <span>(infrangere)</span></h3>
+                                <ul class="list-unstyled">
+                                    <li>Marginean Iulius-Andrei(17')</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="site-section bg-dark">
+            <div class="container">
+
+                <div class="row mb-5">
+                    <div class="col-lg-12">
+                        <div class="widget-next-match">
+                            <div class="widget-title">
+                                <h3>Urmatorul meci</h3>
+                            </div>
+                            <div class="widget-body mb-3">
+                                <div class="widget-vs">
+                                    <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                        <div class="team-1 text-center">
+                                            <img src="~/PozeBD/buzau.png" alt="Image">
+                                            <h3>Gloria Buzau</h3>
+                                        </div>
+                                        <div>
+                                            <span class="vs"><span>VS</span></span>
+                                        </div>
+                                        <div class="team-2 text-center">
+                                            <img src="~/PozeBD/slobozia.png" alt="Image">
+                                            <h3>Unirea Slobozia</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center widget-vs-contents mb-4">
+                                <h4>SuperLiga</h4>
+                                <p class="mb-5">
+                                    <span class="d-block">Ianuarie 24, 2025</span>
+                                    <span class="d-block">15:30</span>
+                                    <strong class="text-primary">Stadion Gloria</strong>
+                                </p>
+
+                                <div id="date-countdown2" class="pb-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 title-section">
+                        <h2 class="heading">Urmatoarele meciuri</h2>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="bg-light p-4 rounded">
+                            <div class="widget-body">
+                                <div class="widget-vs">
+                                    <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                        <div class="team-1 text-center">
+                                            <img src="/PozeBD/steaua.png" alt="Steaua" class="img-fluid">
+                                            <h3>FCSB</h3>
+                                        </div>
+                                        <div>
+                                            <span class="vs"><span>VS</span></span>
+                                        </div>
+                                        <div class="team-2 text-center">
+                                            <img src="/PozeBD/uta.png" alt="Arad" class="img-fluid">
+                                            <h3>UTA Arad</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center widget-vs-contents mb-4">
+                                <h4>SuperLiga</h4>
+                                <p class="mb-5">
+                                    <span class="d-block">Ianuarie 23 2025</span>
+                                    <span class="d-block">17:30</span>
+                                    <strong class="text-primary">National Arena</strong>
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="bg-light p-4 rounded">
+                            <div class="widget-body">
+                                <div class="widget-vs">
+                                    <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                        <div class="team-1 text-center">
+                                            <img src="/PozeBD/rapid.png" alt="Rapid" class="img-fluid">
+                                            <h3>FC Rapid</h3>
+                                        </div>
+                                        <div>
+                                            <span class="vs"><span>VS</span></span>
+                                        </div>
+                                        <div class="team-2 text-center">
+                                            <img src="/PozeBD/sepsi.png" alt="Sepsi" class="img-fluid">
+                                            <h3>Sepsi</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center widget-vs-contents mb-4">
+                                <h4>SuperLiga</h4>
+                                <p class="mb-5">
+                                    <span class="d-block">25 Ianuarie 2025</span>
+                                    <span class="d-block">14:00</span>
+                                    <strong class="text-primary">Ion Oblemenco</strong>
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="bg-light p-4 rounded">
+                            <div class="widget-body">
+                                <div class="widget-vs">
+                                    <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                        <div class="team-1 text-center">
+                                            <img src="/PozeBD/herman.png" alt="Hermannstadt" class="img-fluid">
+                                            <h3>FC Hermannstadt</h3>
+                                        </div>
+                                        <div>
+                                            <span class="vs"><span>VS</span></span>
+                                        </div>
+                                        <div class="team-2 text-center">
+                                            <img src="/PozeBD/universitatea.png" alt="Universitatea" class="img-fluid">
+                                            <h3>Universitatea Cluj</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center widget-vs-contents mb-4">
+                                <h4>SuperLiga</h4>
+                                <p class="mb-5">
+                                    <span class="d-block">Ianuarie 24, 2025</span>
+                                    <span class="d-block">20:30</span>
+                                    <strong class="text-primary">Stadionul Steaua</strong>
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="bg-light p-4 rounded">
+                            <div class="widget-body">
+                                <div class="widget-vs">
+                                    <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                        <div class="team-1 text-center">
+                                            <img src="/PozeBD/poli.png" alt="Poli" class="img-fluid">
+                                            <h3>FC Poli Iasi</h3>
+                                        </div>
+                                        <div>
+                                            <span class="vs"><span>VS</span></span>
+                                        </div>
+                                        <div class="team-2 text-center">
+                                            <img src="/PozeBD/faru.png" alt="Farul" class="img-fluid">
+                                            <h3>FC Farul Constanta</h3>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center widget-vs-contents mb-4">
+                                <h4>SuperLiga</h4>
+                                <p class="mb-5">
+                                    <span class="d-block">Ianuarie 27, 2025</span>
+                                    <span class="d-block">22:00</span>
+                                    <strong class="text-primary">Stadionul Ilie Oana</strong>
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> <!-- .site-section -->
+
+        
+
+
+                
+
+        <div class="container site-section">
+            <div class="row">
+                <div class="col-6 title-section">
+                    <h2 class="heading">Blog-ul nostru</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="custom-media d-flex">
+                        <div class="img mr-4">
+                            <img src="~/PozeBD/Arena.png" alt="Image">
+                        </div>
+                        <div class="text">
+                            <span class="meta">Ianuarie 10, 2025</span>
+                            <h3 class="mb-4"><a href="#">Arena Națională – cea mai mare arenă din România</a></h3>
+                            <p>Arena Națională este locul unde au loc cele mai importante evenimente sportive și concerte din România. Are o capacitate de 55.634 de locuri și un acoperiș retractabil unic în regiune.</p>
+                            <p><a href="#">Află mai multe</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="custom-media d-flex">
+                        <div class="img mr-4">
+                            <img src="~/PozeBD/birligea.png" alt="Image">
+                        </div>
+                        <div class="text">
+                            <span class="meta">Ianuarie 15, 2025</span>
+                            <h3 class="mb-4"><a href="#">Transfer important de la CFR Cluj la FCSB</a></h3>
+                            <p>Unul dintre cei mai promițători jucători ai CFR Cluj, Daniel Bîrligea, ar putea face pasul către FCSB. Atacantul central, evaluat la 2,00 mil. €, este dorit pentru a întări linia ofensivă a echipei bucureștene.</p>
+                            <p><a href="#">Află mai multe</a></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="widget mb-3">
+                            <h3>News</h3>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Club News</a></li>
+                                <li><a href="#">Media Center</a></li>
+                                <li><a href="#">Video</a></li>
+                                <li><a href="#">RSS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="widget mb-3">
+                            <h3>Tickets</h3>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">Online Ticket</a></li>
+                                <li><a href="#">Payment and Prices</a></li>
+                                <li><a href="#">Contact &amp; Booking</a></li>
+                                <li><a href="#">Tickets</a></li>
+                                <li><a href="#">Coupon</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="widget mb-3">
+                            <h3>Meciuri</h3>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">Clasament</a></li>
+                                <li><a href="#">World Cup</a></li>
+                                <li><a href="#">SuperLiga</a></li>
+                                <li><a href="#">Hyper Cup</a></li>
+                                <li><a href="#">Liga Profesionista de Fotbal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="widget mb-3">
+                            <h3>Social</h3>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <div class=" pt-5">
+                            <p>
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart"
+                                                                                                                                               aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Cornel&Bogdan</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+    <!-- .site-wrap -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Stadioane";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Soccer &mdash; Website by Cornel&Bogdan</title>
+
+    <!-- Include toate linkurile pentru stiluri -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+    <div class="site-wrap">
+        <!-- Meniul de navigație -->
+        <header class="site-navbar py-4">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <div class="site-logo">
+                        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="ml-auto">
+                        <nav class="site-navigation text-right">
+                            <ul class="site-menu main-menu">
+                                <li><a href="@Url.Action("Index", "Home")" class="nav-link">Acasa</a></li>
+                                <li><a href="@Url.Action("Index", "Meciuri")" class="nav-link">Meciuri</a></li>
+                                <li><a href="@Url.Action("Index", "Echipe")" class="nav-link">Echipe</a></li>
+                                <li><a href="@Url.Action("Index", "Stadioane")" class="nav-link">Stadioane</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero section -->
+        <div class="hero overlay" style="background-image: url('images/bg_3.jpg');">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-9 mx-auto text-center">
+                        <h1 class="text-white">Stadioane</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lista stadioanelor -->
+        <div class="container mt-5">
+            <div class="row">
+                @foreach (var stadion in Model)
+                {
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="stadion-card">
+                            <img src="@Url.Content($"~/PozeBD/{stadion.Imagine}")" alt="@stadion.Nume" class="img-fluid">
+                            <h3>@stadion.Nume</h3>
+                            <p>Oraș: @stadion.Oras</p>
+                            <p>Capacitate: @stadion.Capacitate locuri</p>
+                            <p>Țara: @stadion.DenumireTara</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <div class="pt-5">
+                            <p>
+                                &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by <a href="https://colorlib.com" target="_blank">Cornel&Bogdan</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Include scripturile pentru funcționalitățile site-ului -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,369 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LPF &mdash; Website by Cornel&Bogdan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+
+
+        <header class="site-navbar py-4" role="banner">
+
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <div class="site-logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="ml-auto">
+                        <nav class="site-navigation position-relative text-right" role="navigation">
+                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                <li><a href="@Url.Action("Index", "Home")" class="nav-link">Acasa</a></li>
+                                <li><a href="@Url.Action("Index", "Meciuri")" class="nav-link">Meciuri</a></li>
+                                <li><a href="@Url.Action("Index", "Echipe")" class="nav-link">Echipe</a></li>
+                                <li><a href="@Url.Action("Index", "Stadioane")" class="nav-link">Stadioane</a></li>
+                            </ul>
+                        </nav>
+
+                        <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right text-white">
+                            <span class="icon-menu h3 text-white"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+    <div class="hero overlay" style="background-image: url('images/bg_3.jpg');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 ml-auto">
+                    <h1 class="text-white">Liga Profesionista de Fotbal</h1>
+                    <p></p>
+                    <div id="date-countdown"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @model IEnumerable<PROIECTDaw.Models.DTOs.EchipeDTO>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="row">
+            <!-- Echipa 1 -->
+            <div class="col-lg-6">
+
+                @if (Model.ElementAtOrDefault(0) != null)
+                {
+                    var echipa1 = Model.ElementAt(1);
+                    <div class="team-vs" id="team-@echipa1.IdEchipa">
+                        <div class="team-details w-100 text-center">
+
+                            <img src="@Url.Content($"~/PozeBD/{echipa1.Emblema}")" alt="@echipa1.Nume - Emblema" class="img-fluid">
+                            <h3>@echipa1.Nume</h3>
+                            <ul class="list-unstyled">
+                                <li><strong>Valoare echipă:</strong> @echipa1.ValoareEchipa</li>
+                                <li><strong>Data înființare:</strong> @echipa1.DataInfiintare.ToString("dd/MM/yyyy")</li>
+                            </ul>
+                        </div>
+                    </div>
+                }
+            </div>
+
+
+
+
+            <!-- Echipa 2 -->
+            <div class="col-lg-6">
+                @if (Model.ElementAtOrDefault(1) != null)
+                {
+                    var echipa2 = Model.ElementAt(2);
+                    <div class="team-vs" id="team-@echipa2.IdEchipa">
+                        <div class="team-details w-100 text-center">
+                            <img src="@Url.Content($"~/PozeBD/{echipa2.Emblema}")" alt="@echipa2.Nume - Emblema" class="img-fluid" />
+                            <h3>@echipa2.Nume </h3>
+                            <ul class="list-unstyled">
+                                <li><strong>Valoare echipă:</strong> @echipa2.ValoareEchipa</li>
+                                <li><strong>Data înființare:</strong> @echipa2.DataInfiintare.ToString("dd/MM/yyyy")</li>
+                            </ul>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+
+
+    <div class="latest-news">
+
+        <div class="site-section bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="widget-next-match">
+                            <div class="widget-title">
+                                <h3>Urmatorul meci</h3>
+                            </div>
+                            <div class="widget-body mb-3">
+                                <div class="widget-vs">
+                                    <div class="d-flex align-items-center justify-content-around justify-content-between w-100">
+                                        <div class="team-1 text-center">
+                                            <img src="~/PozeBD/buzau.png" alt="Image">
+                                            <h3>Gloria Buzau</h3>
+                                        </div>
+                                        <div>
+                                            <span class="vs"><span>VS</span></span>
+                                        </div>
+                                        <div class="team-2 text-center">
+                                            <img src="~/PozeBD/slobozia.png" alt="Image">
+                                            <h3>Unirea Slobozia</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center widget-vs-contents mb-4">
+                                <h4>SuperLiga</h4>
+                                <p class="mb-5">
+                                    <span class="d-block">23 Ianuarie,2025</span>
+                                    <span class="d-block">15:30</span>
+                                    <strong class="text-primary">Stadion Gloria</strong>
+                                </p>
+
+                                <div id="date-countdown2" class="pb-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class="widget-next-match">
+                            <table class="table custom-table">
+                                <thead>
+                                    <tr>
+                                        <th>P</th>
+                                        <th>Echipa</th>
+                                        <th>W</th>
+                                        <th>D</th>
+                                        <th>L</th>
+                                        <th>PTS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><strong class="text-white">FC Universitatea Cluj</strong></td>
+                                        <td>11</td>
+                                        <td>7</td>
+                                        <td>4</td>
+                                        <td>40</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><strong class="text-white">FCSB</strong></td>
+                                        <td>10</td>
+                                        <td>8</td>
+                                        <td>4</td>
+                                        <td>38</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><strong class="text-white">Dinamo Bucuresti</strong></td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                        <td>3</td>
+                                        <td>37</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><strong class="text-white">Universitatea Craiova</strong></td>
+                                        <td>9</td>
+                                        <td>9</td>
+                                        <td>4</td>
+                                        <td>36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td><strong class="text-white">FC CFR 1907 Cluj</strong></td>
+                                        <td>9</td>
+                                        <td>9</td>
+                                        <td>4</td>
+                                        <td>36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td><strong class="text-white">FC Rapid 1923</strong></td>
+                                        <td>7</td>
+                                        <td>11</td>
+                                        <td>4</td>
+                                        <td>32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td><strong class="text-white">FC Petrolul</strong></td>
+                                        <td>7</td>
+                                        <td>11</td>
+                                        <td>4</td>
+                                        <td>32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td><strong class="text-white">Sepsi OSK</strong></td>
+                                        <td>8</td>
+                                        <td>6</td>
+                                        <td>8</td>
+                                        <td>30</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- .site-section -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="widget mb-3">
+                            <h3>Noutati</h3>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Club News</a></li>
+                                <li><a href="#">Media Center</a></li>
+                                <li><a href="#">Video</a></li>
+                                <li><a href="#">RSS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="widget mb-3">
+                            <h3>Bilete</h3>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">Online Ticket</a></li>
+                                <li><a href="#">Payment and Prices</a></li>
+                                <li><a href="#">Contact &amp; Booking</a></li>
+                                <li><a href="#">Bilete</a></li>
+                                <li><a href="#">Coupon</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="widget mb-3">
+                            <h3>Meciuri</h3>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">Clasament</a></li>
+                                <li><a href="#">World Cup</a></li>
+                                <li><a href="#">SuperLiga</a></li>
+                                <li><a href="#">Hyper Cup</a></li>
+                                <li><a href="#">Liga Profesionista de Fotbal</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="widget mb-3">
+                            <h3>Social</h3>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <div class=" pt-5">
+                            <p>
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart"
+                                                                                                                                               aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Cornel&Bogdan</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+    <!-- .site-wrap -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
+
