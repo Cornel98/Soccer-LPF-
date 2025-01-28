@@ -85,7 +85,7 @@ Crează un pull request pentru a contribui cu modificările tale.
 Feedback și Întrebări 💬
 Dacă ai sugestii de îmbunătățiri sau întrebări despre proiect, nu ezita să deschizi un Issue sau să creezi un Pull Request!
 
-Contact 📧
-LinkedIn: Cornel Ciocan
+## Contact 📧
+LinkedIn: [Cornel Ciocan](https://www.linkedin.com/in/cornel-ciocan-0b9917311/)
 
 🎉 Mulțumesc pentru interesul acordat proiectului meu! 🎉
