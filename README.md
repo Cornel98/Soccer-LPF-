@@ -19,7 +19,7 @@ Aceasta este o aplicație web dezvoltată în **ASP.NET Core 7.0**, care gestion
 ## Instrucțiuni de rulare  
 1. Clonează acest repository:  
    ```bash
-   git clone https://github.com/utilizator/proiect-daw.git
+   git clone https://github.com/Cornel98/Soccer-LPF-
    ```  
 2. Configurează conexiunea la baza de date în `appsettings.json`.  
 3. Rulează aplicația folosind Visual Studio sau CLI .NET:  
