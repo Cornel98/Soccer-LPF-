@@ -45,47 +45,51 @@ Această aplicație web a fost dezvoltată folosind **ASP.NET Core 7.0** și se 
    Deschide un terminal și clonează repository-ul folosind comanda:
    ```bash
    git clone https://github.com/Cornel98/Soccer-LPF-Aplicatie-ASP.NET-.git
-Configurează conexiunea la baza de date: Deschide fișierul appsettings.json și actualizează secțiunea de conexiune la baza de date cu detaliile serverului și ale bazei de date SQL Server. Exemplu:
+Configurează conexiunea la baza de date: Deschide fișierul appsettings.json și actualizează secțiunea de conexiune la baza de date cu detaliile serverului și ale bazei de date SQL Server. 
+
+**Exemplu**:
 
 json
-Copiază
-Editează
 "ConnectionStrings": {
   "DefaultConnection": "Server=localhost;Database=TeamAppDB;Trusted_Connection=True;"
 }
+
 Aplică migrațiile bazei de date (dacă este cazul): Asigură-te că ai aplicat migrațiile pentru a crea schema bazei de date:
 
-bash
-Copiază
-Editează
+**bash**
+
 dotnet ef database update
 Rulează aplicația: Poți rula aplicația fie folosind Visual Studio, fie folosind linia de comandă (CLI) .NET:
 
-bash
-Copiază
-Editează
-dotnet run
-Aplicația va porni pe http://localhost:7254, iar interfața ar trebui să fie accesibilă în browser.
+**bash**
 
-Roadmap și îmbunătățiri viitoare 📈
+dotnet run
+
+**Aplicația va porni pe http://localhost:7254, iar interfața ar trebui să fie accesibilă în browser.**
+
+**Roadmap și îmbunătățiri viitoare** 📈
+
 Autentificare și gestionarea utilizatorilor: Adăugarea unui sistem de autentificare pentru administratori și utilizatori, cu roluri diferite.
 
-Dashboard de performanță: Crearea unui dashboard pentru vizualizarea statisticilor echipelor și jucătorilor.
+**Dashboard de performanță:** Crearea unui dashboard pentru vizualizarea statisticilor echipelor și jucătorilor.
 
-Interfață Frontend: Integrarea unui frontend interactiv folosind React sau Angular, completând funcționalitățile backend-ului.
+**Interfață Frontend:** Integrarea unui frontend interactiv folosind React sau Angular, completând funcționalitățile backend-ului.
 
-Contribuțiile sunt foarte apreciate! 🙌
+**Contribuțiile sunt foarte apreciate!**
+🙌
 Dacă dorești să contribui la acest proiect, te rog să urmezi pașii de mai jos:
 
-Fă un fork al repository-ului.
+**Fă un fork al repository-ului.**
+
 Creează o ramură nouă (git checkout -b feature-noua-functie).
 Fă modificările dorite.
 Adaugă, comitează și împinge modificările (git push origin feature-noua-functie).
 Crează un pull request pentru a contribui cu modificările tale.
-Feedback și Întrebări 💬
+
+**Feedback și Întrebări** 💬
 Dacă ai sugestii de îmbunătățiri sau întrebări despre proiect, nu ezita să deschizi un Issue sau să creezi un Pull Request!
 
 ## Contact 📧
 LinkedIn: [Cornel Ciocan](https://www.linkedin.com/in/cornel-ciocan-0b9917311/)
 
-🎉 Mulțumesc pentru interesul acordat proiectului meu! 🎉
+ Mulțumesc pentru interesul acordat proiectului meu!🎉
