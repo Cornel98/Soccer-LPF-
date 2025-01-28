@@ -1,43 +1,51 @@
-# Soccer LPF ⚽
 
-Această aplicație web a fost dezvoltată folosind **ASP.NET Core 7.0** și se concentrează pe gestionarea echipelor și jucătorilor dintr-o competiție de fotbal. Proiectul pune accent pe organizare, utilizând modele **DTO (Data Transfer Objects)** pentru manipularea datelor și asigură o conexiune sigură la baza de date SQL Server.
+Sigur, iată o variantă extinsă a descrierii, incluzând utilizarea Docker și Azure Data Studio pentru baza de date:
 
-## Funcționalități principale 🚀
-1. **Gestionarea echipelor și jucătorilor**:
-   - Adăugarea, actualizarea și vizualizarea echipelor și a jucătorilor.
-   - Detalii importante precum numele echipei, emblema, salariile jucătorilor și data de înființare a echipei.
-   
-2. **Conexiune la baza de date SQL Server**:
-   - Utilizarea **Entity Framework Core** pentru conectarea la baza de date și manipularea datelor.
+Soccer LPF ⚽
+Această aplicație web a fost dezvoltată folosind ASP.NET Core 7.0 și se concentrează pe gestionarea echipelor și jucătorilor dintr-o competiție de fotbal. Proiectul pune accent pe organizare, utilizând modele DTO (Data Transfer Objects) pentru manipularea datelor și asigură o conexiune sigură la baza de date SQL Server.
 
-3. **Rute configurabile pentru controlere**:
-   - API-uri RESTful pentru gestionarea echipelor și jucătorilor.
-   
-4. **Integrarea fișierelor statice**:
-   - Suport pentru imagini ale echipelor și jucătorilor, care sunt încărcate și gestionate prin aplicație.
+Funcționalități principale 🚀
+Gestionarea echipelor și jucătorilor:
 
-5. **Interfață utilizator (Frontend)**:
-   - Aplicația utilizează **Bootstrap** pentru un design responsive și modern.
-   - **JavaScript** pentru interactivitate și validarea formularelor.
+Adăugarea, actualizarea și vizualizarea echipelor și a jucătorilor.
+Detalii importante precum numele echipei, emblema, salariile jucătorilor și data de înființare a echipei.
+Conexiune la baza de date SQL Server:
 
-## Tehnologii utilizate 🛠️
-- **Backend**: 
-  - **ASP.NET Core 7.0**: Framework pentru dezvoltarea aplicațiilor web moderne.
-  - **Entity Framework Core**: ORM (Object-Relational Mapper) pentru manipularea bazei de date.
-  - **C#**: Limbajul de programare utilizat pentru dezvoltarea aplicației.
-  
-- **Baza de date**: 
-  - **SQL Server**: Sistemul de gestionare a bazelor de date utilizat pentru stocarea datelor despre echipe și jucători.
+Utilizarea Entity Framework Core pentru conectarea la baza de date și manipularea datelor.
+Docker: Baza de date SQL Server a fost containerizată folosind Docker pentru a asigura un mediu izolat și scalabil de dezvoltare și testare.
+Azure Data Studio: După containerizarea bazei de date, am folosit Azure Data Studio pentru gestionarea și administrarea eficientă a datelor.
+Rute configurabile pentru controlere:
 
-- **Frontend**:
-  - **Bootstrap**: Framework CSS pentru un design modern și responsive.
-  - **JavaScript**: Limbaj de programare pentru interactivitatea aplicației.
+API-uri RESTful pentru gestionarea echipelor și jucătorilor.
+Integrarea fișierelor statice:
 
-## Instrucțiuni de rulare locală 🔧
-1. **Clonează acest repository**:
-   Deschide un terminal și clonează repository-ul folosind comanda:
-   ```bash
-   git clone https://github.com/Cornel98/Soccer-LPF-Aplicatie-ASP.NET-.git
+Suport pentru imagini ale echipelor și jucătorilor, care sunt încărcate și gestionate prin aplicație.
+Interfață utilizator (Frontend):
+
+Aplicația utilizează Bootstrap pentru un design responsive și modern.
+JavaScript pentru interactivitate și validarea formularelor.
+Tehnologii utilizate 🛠️
+Backend:
+
+ASP.NET Core 7.0: Framework pentru dezvoltarea aplicațiilor web moderne.
+Entity Framework Core: ORM (Object-Relational Mapper) pentru manipularea bazei de date.
+C#: Limbajul de programare utilizat pentru dezvoltarea aplicației.
+Baza de date:
+
+SQL Server: Sistemul de gestionare a bazelor de date utilizat pentru stocarea datelor despre echipe și jucători.
+Docker: Utilizat pentru containerizarea SQL Server, asigurând un mediu de dezvoltare izolat și portabil.
+Azure Data Studio: Folosit pentru administrarea bazei de date și vizualizarea datelor într-un mod eficient.
+Frontend:
+
+Bootstrap: Framework CSS pentru un design modern și responsive.
+JavaScript: Limbaj de programare pentru interactivitatea aplicației.
+Instrucțiuni de rulare locală 🔧
+Clonează acest repository: Deschide un terminal și clonează repository-ul folosind comanda:
+
+bash
+Copiază
+Editează
+git clone https://github.com/Cornel98/Soccer-LPF-Aplicatie-ASP.NET-.git
 Configurează conexiunea la baza de date: Deschide fișierul appsettings.json și actualizează secțiunea de conexiune la baza de date cu detaliile serverului și ale bazei de date SQL Server. Exemplu:
 
 json
@@ -61,17 +69,14 @@ dotnet run
 Aplicația va porni pe http://localhost:7254, iar interfața ar trebui să fie accesibilă în browser.
 
 Roadmap și îmbunătățiri viitoare 📈
-Autentificare și gestionarea utilizatorilor:
+Autentificare și gestionarea utilizatorilor: Adăugarea unui sistem de autentificare pentru administratori și utilizatori, cu roluri diferite.
 
-Adăugarea unui sistem de autentificare pentru administratori și utilizatori, cu roluri diferite.
-Dashboard de performanță:
+Dashboard de performanță: Crearea unui dashboard pentru vizualizarea statisticilor echipelor și jucătorilor.
 
-Crearea unui dashboard pentru vizualizarea statisticilor echipelor și jucătorilor.
-Interfață Frontend:
+Interfață Frontend: Integrarea unui frontend interactiv folosind React sau Angular, completând funcționalitățile backend-ului.
 
-Integrarea unui frontend interactiv folosind React sau Angular, completând funcționalitățile backend-ului.
-
-Contribuțiile sunt foarte apreciate! Dacă dorești să contribui la acest proiect, te rog să urmezi pașii de mai jos:
+Contribuțiile sunt foarte apreciate! 🙌
+Dacă dorești să contribui la acest proiect, te rog să urmezi pașii de mai jos:
 
 Fă un fork al repository-ului.
 Creează o ramură nouă (git checkout -b feature-noua-functie).
@@ -82,6 +87,6 @@ Feedback și Întrebări 💬
 Dacă ai sugestii de îmbunătățiri sau întrebări despre proiect, nu ezita să deschizi un Issue sau să creezi un Pull Request!
 
 Contact 📧
-LinkedIn: https://www.linkedin.com/in/cornel-ciocan-0b9917311/
+LinkedIn: Cornel Ciocan
 
 🎉 Mulțumesc pentru interesul acordat proiectului meu! 🎉
