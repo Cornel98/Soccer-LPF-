@@ -70,7 +70,7 @@ Crearea unui dashboard pentru vizualizarea statisticilor echipelor și jucători
 Interfață Frontend:
 
 Integrarea unui frontend interactiv folosind React sau Angular, completând funcționalitățile backend-ului.
-Contribuții 🌱
+
 Contribuțiile sunt foarte apreciate! Dacă dorești să contribui la acest proiect, te rog să urmezi pașii de mai jos:
 
 Fă un fork al repository-ului.
