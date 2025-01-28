@@ -16,6 +16,10 @@ Această aplicație web a fost dezvoltată folosind **ASP.NET Core 7.0** și se 
 4. **Integrarea fișierelor statice**:
    - Suport pentru imagini ale echipelor și jucătorilor, care sunt încărcate și gestionate prin aplicație.
 
+5. **Interfață utilizator (Frontend)**:
+   - Aplicația utilizează **Bootstrap** pentru un design responsive și modern.
+   - **JavaScript** pentru interactivitate și validarea formularelor.
+
 ## Tehnologii utilizate 🛠️
 - **Backend**: 
   - **ASP.NET Core 7.0**: Framework pentru dezvoltarea aplicațiilor web moderne.
@@ -26,7 +30,8 @@ Această aplicație web a fost dezvoltată folosind **ASP.NET Core 7.0** și se 
   - **SQL Server**: Sistemul de gestionare a bazelor de date utilizat pentru stocarea datelor despre echipe și jucători.
 
 - **Frontend**:
-  - În prezent, aplicația se concentrează pe partea de backend, dar se poate extinde cu HTML, CSS, și JavaScript pentru o interfață mai interactivă.
+  - **Bootstrap**: Framework CSS pentru un design modern și responsive.
+  - **JavaScript**: Limbaj de programare pentru interactivitatea aplicației.
 
 ## Instrucțiuni de rulare locală 🔧
 1. **Clonează acest repository**:
@@ -77,4 +82,6 @@ Feedback și Întrebări 💬
 Dacă ai sugestii de îmbunătățiri sau întrebări despre proiect, nu ezita să deschizi un Issue sau să creezi un Pull Request!
 
 Contact 📧
-Linkedin : https://www.linkedin.com/in/cornel-ciocan-0b9917311/
+LinkedIn: https://www.linkedin.com/in/cornel-ciocan-0b9917311/
+
+🎉 Mulțumesc pentru interesul acordat proiectului meu! 🎉
