@@ -44,7 +44,7 @@ json
 Copiază
 Editează
 "ConnectionStrings": {
-  "DefaultConnection": "Server=localhost;Database=ProiectDAWDB;Trusted_Connection=True;"
+  "DefaultConnection": "Server=localhost;Database=TeamAppDB;Trusted_Connection=True;"
 }
 Aplică migrațiile bazei de date (dacă este cazul): Asigură-te că ai aplicat migrațiile pentru a crea schema bazei de date:
 
